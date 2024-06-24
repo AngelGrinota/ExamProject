@@ -1,0 +1,16 @@
+﻿<Window x:Class="ExamProject.Windows.DeleteProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamProject.Windows"
+        mc:Ignorable="d"
+        Title="Удаление товара" Height="105" Width="270">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 5">
+            <Label Content="Артикул:" Height="28" Width="80"/>
+            <TextBox x:Name="articleTextBox" Width="145" MaxLength="6" Height="25" Margin="5 0"/>
+        </StackPanel>
+        <Button x:Name="deleteButton" Click="DeleteButton_Click" Content="Удалить" Margin="5 5" Width="70" HorizontalAlignment="Left"/>
+    </StackPanel>
+</Window>
